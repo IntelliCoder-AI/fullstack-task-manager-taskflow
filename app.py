@@ -14,12 +14,12 @@ from database import (
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/api')
 def home_page():
     return "Welcome to Home Page"
 
 
-@app.route('/tasks')
+@app.route('/')
 def tasks_page():
     return render_template('index.html')
 
